@@ -5,7 +5,7 @@ Input_Search.focus()
 
 Create_Search.addEventListener('click', () => {
     if (Input_Search.value !== '') {
-        fetch(`https://api.github.com/users/${Input_Search.value}/repos`).then((response) => {
+        fetch(`https://api.github.com/users/${Input_Search.value.trim()}/repos`).then((response) => {
             let Data = response.json()
             return Data
         }).then((Full_Data) => {
