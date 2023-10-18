@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.hedaer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+input {
+    border: 1px solid #eee;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+}
+
+button {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: crimson;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: 15px;
+}
+
+.parent_data {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 10px;
+    background-color: #777;
+    border-radius: 6px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.Repo {
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.Not_Found {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    color: tomato;
+    font-size: 18px
+}
+
+.puttons a {
+    padding: 10px 10px;
+    background-color: #9E9E9E;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all .3s;
+    word-wrap: nowrap;
+}
+
+.puttons a:hover {
+    background-color: #cac9c9;
+}
+
+.Parent_Repos span {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+@media(max-width : 768px) {
+    .container {
+        width: 98% ;
+    }
+
+}
+
